@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Pool bundle - {{page.title}}</title>    
+    <link href="assets/default.css" rel="stylesheet" type="text/css" title="Default style" media="all">
+    <link href="assets/alternate.css" rel="alternate stylesheet" type="text/css" title="Alternate style"  media="all">
+    <link href="assets/print.css" rel="stylesheet" type="text/css" media="print"> 
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="assets/social-icons.js"></script>
+
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container-narrow">
+          <a class="brand" href="index.html">Pool bundle</a>
+          <ul class="nav">            
+              <li {% if page.url == "/index.html" %} class="active" {% endif %}><a href="index.html">Úvod</a></li>
+              <li {% if page.url == "/reqs.html" %} class="active" {% endif %}><a href="reqs.html">Požadavky</a></li>                        
+              <li {% if page.url == "/database.html" %} class="active" {% endif %}><a href="database.html">Databázový model</a></li>
+              <li {% if page.url == "/views.html" %} class="active" {% endif %}><a href="views.html">Ukázka</a></li>
+              <li {% if page.url == "/score.html" %} class="active" {% endif %}><a href="score.html">Hodnocení</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="container-main" class="container-narrow">
+      <div class="content">        
+        <div class="page-header">
+          <h1>{{page.title}}</h1>
+        </div>
+        {{content}}
+      </div>
+      <hr>
+      <footer>
+        <p>&copy; 2013 Lubomír Čuhel | mail: <a href="mailto:cuhellub@fit.cvut.cz">cuhellub@fit.cvut.cz</a> | phone: +420 603 116 500 | <a href="sitemap.html">Sitemap</a></p>
+        <div class="social-icons">
+          <a class="social-icon" id="fb" href="http://fb.com/palmyman" target="_blank"></a>
+          <a class="social-icon" id="tw" href="http://twitter.com/palmyman" target="_blank"></a>
+          <a class="social-icon" id="in" href="http://cz.linkedin.com/pub/lubom%C3%ADr-%C4%8Duhel/74/6a8/b28/" target="_blank"></a>
+          <a class="social-icon" id="gp" href="https://plus.google.com/u/0/103590165454154759009/posts" target="_blank"></a>
+          <a class="social-icon" id="gh" href="http://github.com/palmyman" target="_blank"></a>
+        </div>
+      </footer>
+
+    </div>
+  </body>
+</html>
+

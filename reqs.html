@@ -1,0 +1,93 @@
+---
+layout: layout
+title: Požadavky
+---
+<ul>
+<li>Nepřihlášený uživatel</li>
+<li>
+  Přihlášený uživatel - autentizuje se proti lokální databázi uživatelů (v tomto případě proti MySQL)         
+  <ul>
+    <li>Autor</li>
+    <li>Respondent</li>
+  </ul>
+</li>  
+</ul>
+<h2>Funkční požadavky</h2>
+<ul>
+<li>
+  Autentizace uživatele
+  <ul>
+    <li>Přihlášení uživatele</li>
+    <li>Odhlášení uživatele</li>
+  </ul>
+</li>
+<li>
+  Anketa, otázky, skupiny otázek 
+  <ul>
+    <li>
+    Anketa
+      <ul>
+        <li>Vytvoření ankety</li>
+        <li>Seznam anket</li>
+        <li>Zvolení ankety dle identifikátoru</li>
+        <li>Úprava zvolené ankety</li>
+        <li>
+          <span class="optional">volitelně</span> Otevření ankety
+          <ul>
+            <li>ručně</li>
+            <li>automaticky dle nastaveného času a data</li>
+          </ul>
+        </li>
+        <li>
+          <span class="optional">volitelně</span> Uzavření ankety
+          <ul>
+            <li>ručně</li>
+            <li>automaticky dle nastaveného času a data</li>
+          </ul>
+        </li>
+        <li>Smazání ankety</li>
+        <li>Zobrazení výsledků ankety</li>
+      </ul>
+    </li>
+    <li>
+      Otázky
+      <ul>
+        <li>Vytvoření otázky - určení typu, text otázky, příp. možné odpovědi</li>
+        <li>Úprava otázky - text otázky, příp. možné odpovědi</li>
+        <li>Smazání otázky</li>
+        <li>Zařazení otázky do ankety / skupiny otázek</li>
+        <li>Vyřazení otázky ze ankety / skupiny otázek</li>
+        <li>Zobrazení výsledku otázky</li>
+      </ul>
+    </li>
+    <li>
+      <span class="optional">volitelně</span> Skupiny otázek
+      <ul>
+        <li>Vytvoření skupiny otázek - název, popis</li>
+        <li>Úprava skupiny otázek - název, popis</li>
+        <li>Smazání skupiny otázek</li>
+        <li>Zařazení skupiny otázek do ankety</li>
+        <li>Vyřazení skupiny otázek ze ankety</li>
+        <li>Zobrazení výsledku skupiny otázek</li>
+      </ul>
+    </li>
+  </ul>
+</li>
+<li>
+  Vyplnění ankety
+  <ul>
+    <li>Vyplnění otázky</li>
+    <li><span class="optional">volitelně</span> Vyplnění skupiny otázek</li>
+    <li>Zobrazení vyplněných hodnot respondenta</li>
+  </ul>
+</li>
+</ul>
+<h2>Nefunkční požadavky</h2>
+<ul>
+<li>PHP</li>
+<li>Framework Symfony 2</li>
+<li>MySQL databáze</li>
+<li>webové uživatelské rozhraní</li>
+<li>nasazení aplikace na server webdev.fit.cvut.cz</li>
+</ul>                                                  
+    
